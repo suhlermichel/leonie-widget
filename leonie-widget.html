@@ -2,76 +2,36 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Leonie – Deine digitale Assistentin</title>
+  <title>Frag Leonie</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
       background: url('IMG_5837.JPG') no-repeat center center fixed;
       background-size: cover;
-      color: #212121;
+      font-family: Arial, sans-serif;
     }
-    .overlay {
+    .container {
       background-color: rgba(255, 255, 255, 0.85);
-      max-width: 900px;
-      margin: 5vh auto;
+      max-width: 600px;
+      margin: 10vh auto;
       padding: 2rem;
       border-radius: 16px;
+      text-align: center;
       box-shadow: 0 0 20px rgba(0,0,0,0.2);
     }
     .logo {
-      display: block;
-      margin: 0 auto 20px auto;
-      max-width: 300px;
-    }
-    .intro {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-    .intro-text {
-      flex: 1;
-    }
-    .leonie-img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #D50000;
-    }
-    h1 {
-      color: #D50000;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      font-size: 1.1rem;
-      line-height: 1.5;
-    }
-    .widget {
-      margin-top: 2rem;
+      max-width: 200px;
+      margin-bottom: 1.5rem;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <img src="1535481984.png" alt="Logo Reiners Fahrschule" class="logo">
+  <div class="container">
+    <img src="1535481984.png" alt="Reiners Fahrschule Logo" class="logo">
     
-    <div class="intro">
-      <div class="intro-text">
-        <h1>Hast du Fragen?</h1>
-        <p>Frag Leonie – unsere digitale Sprachassistentin!<br>
-        Sie hilft dir bei Fragen zur Fahrausbildung, zu Preisen, Terminen, Führerscheinklassen und mehr. Einfach ausprobieren!</p>
-      </div>
-      <img src="Leonie_gelb.png" alt="Leonie" class="leonie-img">
-    </div>
-
-    <div class="widget">
-      <elevenlabs-convai agent-id="jha7Tqkwngr3kEiBGOJZ"></elevenlabs-convai>
-      <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
-    </div>
+    <elevenlabs-convai agent-id="jha7Tqkwngr3kEiBGOJZ"></elevenlabs-convai>
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
   </div>
 </body>
 </html>
