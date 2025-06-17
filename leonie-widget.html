@@ -1,37 +1,73 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Frag Leonie</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frag Leonie – Reiners Fahrschule</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: url('IMG_5837.JPG') no-repeat center center fixed;
+      background-image: url("IMG_5837.JPG");
       background-size: cover;
+      background-position: center;
       font-family: Arial, sans-serif;
+      color: #212121;
     }
-    .container {
-      background-color: rgba(255, 255, 255, 0.85);
-      max-width: 600px;
-      margin: 10vh auto;
-      padding: 2rem;
-      border-radius: 16px;
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.75);
+      padding: 20px;
+      margin: 50px auto;
+      max-width: 500px;
+      border-radius: 20px;
       text-align: center;
-      box-shadow: 0 0 20px rgba(0,0,0,0.2);
     }
+
     .logo {
-      max-width: 200px;
-      margin-bottom: 1.5rem;
+      width: 120px;
+      margin-bottom: 15px;
+    }
+
+    .leonie {
+      width: 100px;
+      border-radius: 50%;
+      margin: 10px auto;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #fdd835;
+      color: #212121;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-button:hover {
+      background-color: #e0c224;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="1535481984.png" alt="Reiners Fahrschule Logo" class="logo">
-    
-    <elevenlabs-convai agent-id="jha7Tqkwngr3kEiBGOJZ"></elevenlabs-convai>
-    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
+  <!-- Zurück-Button -->
+  <a href="https://www.reinersfahrschule.de" class="back-button">🔙 Zurück zur Webseite</a>
+
+  <!-- Overlay-Box -->
+  <div class="overlay">
+    <img src="1535481984.png" alt="Logo Reiners Fahrschule" class="logo"/>
+    <h1>Frag Leonie – unsere digitale Sprachassistentin!</h1>
+    <img src="Leonie_gelb.png" alt="Leonie" class="leonie"/>
+    <p>Stell ihr deine Fragen zur Fahrschule, zur Anmeldung oder zum nächsten Kursstart.</p>
   </div>
+
+  <!-- ElevenLabs Widget -->
+  <elevenlabs-convai agent-id="jha7Tqkwngr3kEiBGOJZ"></elevenlabs-convai>
+  <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
 </body>
 </html>
